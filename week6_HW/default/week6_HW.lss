@@ -1202,9 +1202,9 @@ void main()
 	while(1)
 	{
     
-		//led 전체를 200ms의 주기로 6번 반복하라.
-		led_all_onoff(6,200);
-     680:	86 e0       	ldi	r24, 0x06	; 6
+		//led 전체를 200ms의 주기로 3번 반복하라.
+		led_all_onoff(3,200);
+     680:	83 e0       	ldi	r24, 0x03	; 3
      682:	90 e0       	ldi	r25, 0x00	; 0
      684:	68 ec       	ldi	r22, 0xC8	; 200
      686:	70 e0       	ldi	r23, 0x00	; 0
@@ -1239,9 +1239,9 @@ void main()
      6b6:	51 e0       	ldi	r21, 0x01	; 1
      6b8:	0e 94 fa 00 	call	0x1f4	; 0x1f4 <led_alternating_onoff>
 
-    	//led 왼쪽->오른쪽을 300ms의 주기로 3번을 반복한다.
-		led_shift(3,300);
-     6bc:	83 e0       	ldi	r24, 0x03	; 3
+    	//led 왼쪽->오른쪽을 300ms의 주기로 5번을 반복한다.
+		led_shift(5,300);
+     6bc:	85 e0       	ldi	r24, 0x05	; 5
      6be:	90 e0       	ldi	r25, 0x00	; 0
      6c0:	6c e2       	ldi	r22, 0x2C	; 44
      6c2:	71 e0       	ldi	r23, 0x01	; 1

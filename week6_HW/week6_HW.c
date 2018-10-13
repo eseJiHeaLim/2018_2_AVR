@@ -84,8 +84,8 @@ void main()
 	while(1)
 	{
     
-		//led 전체를 200ms의 주기로 6번 반복하라.
-		led_all_onoff(6,200);
+		//led 전체를 200ms의 주기로 3번 반복하라.
+		led_all_onoff(3,200);
     
 		//입력한 모양대로 시작으로 교대로 300ms의 주기로 3번 반복하라 
 		//세트 1 
@@ -95,7 +95,7 @@ void main()
 		//세트 3 
 		led_alternating_onoff(0xC3,3,300);
 
-    	//led 왼쪽->오른쪽을 300ms의 주기로 3번을 반복한다.
-		led_shift(3,300);
+    	//led 왼쪽->오른쪽을 300ms의 주기로 5번을 반복한다.
+		led_shift(5,300);
 	}
 }
